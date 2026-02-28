@@ -14,23 +14,22 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         // Generate system status message
         const status = `          
-╭━━〔 *DARK-CYBER-MD* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• *👋Hi*: ${pushname}
-┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
-┃◈┃• *📟 Ram*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
-┃◈┃• *👨‍💻 Owner*: Hashu Tech </>
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+〔 *𝐃𝐀𝐑𝐊-𝐂𝐘𝐁𝐄𝐑-𝐌𝐃* 〕
 
-  *DARK-CYBER-MD Multidevice Whatsapp Bot Make By Hashiya Tech*
+> *👋 ʜɪ*: ${pushname}
+> *⏳ ᴜᴘᴛɪᴍᴇ*:  ${runtime(process.uptime())} 
+> *📟 ʀᴀᴍ*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
+> *👨‍💻 ᴏᴡɴᴇʀ*: ʜᴀꜱʜᴜᴜ ᴛᴇᴄʜ </>
 
-     ⭕ FOLLOW 𝗢𝗨𝗥 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟
-     
- _https://whatsapp.com/channel/0029VazhnLzK0IBdwXG4152o_
+
+*ᴅᴀʀᴋ ᴄʏʙᴇʀ ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ʜᴀꜱʜᴜᴜ ᴛᴇᴄʜ 🥹💗*
+
+💗🥹 𝗙𝗢𝗟𝗟𝗢𝗪 𝗢𝗨𝗥 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟
+    
+https://whatsapp.com/channel/0029VazhnLzK0IBdwXG4152o
 
   
-> *POWERED BY DARK-CYBER-MD 📌️`;
+> *𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑 𝐌𝐃 𝐖𝐀 𝐁𝐎𝐓 📌️`;
 
 
         await conn.sendMessage(from, { 
