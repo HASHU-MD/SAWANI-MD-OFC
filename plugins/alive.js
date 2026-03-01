@@ -40,7 +40,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 //===========menu========
 cmd({
-    pattern: "menu",
+    pattern: "menuerror",
     desc: "To get the menu.",
     react: "📜",
     category: "main",
