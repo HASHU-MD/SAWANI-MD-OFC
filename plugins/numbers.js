@@ -1,4 +1,4 @@
-// plugins/numbers.js
+q// plugins/numbers.js
 const axios = require('axios');
 const { cmd } = require("../command");
 const config = require('../config');
@@ -10,7 +10,7 @@ const watchers = new Map(); // groupId -> watcher
 const FOOTER = `\n────────────────────\n> ✨ Powered by *MUZAAMIL-X-ARSLAN-MD* ✨\n* 🌐 *~_https://github.com/Arslan-MD/Arslan_MD_~*`;
 
 cmd({
-  pattern: 'numbers',
+  pattern: 'fakenb',
   desc: 'Get live numbers by country code',
   category: 'main',
   react: '📱',
@@ -22,7 +22,7 @@ cmd({
 
     if(!countryCode) return await m.reply('❌ Please provide a country code. Example: .numbers 93');
 
-    const res = await axios.get('https://arslan-md-otp-api.vercel.app/api/numbers');
+    const res = await axios.get('https://api.vreden.my.id/api/v1/tools/fakenumber/number');
 
     // Filter numbers by country code
     const filteredNumbers = res.data?.data?.aaData?.filter(n => {
