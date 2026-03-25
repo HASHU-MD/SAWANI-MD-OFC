@@ -76,7 +76,7 @@ cmd({
 },
 async (conn, m, { reply }) => {
     try {
-        const { data } = await axios.get("https://api.vreden.my.id/api/tools/fakenumber/country");
+        const { data } = await axios.get("https://api.vreden.my.id/api/v1/tools/fakenumber/country");
 
         if (!data || !data.result) return reply("❌ Couldn't fetch country list.");
 
@@ -108,7 +108,7 @@ async (conn, mek, m, { from, args, reply }) => {
         
         // Fetch OTP messages
         const { data } = await axios.get(
-            `https://api.vreden.my.id/api/tools/fakenumber/message?nomor=${encodeURIComponent(phoneNumber)}`,
+            `https://api.vreden.my.id/api/v1/tools/fakenumber/message?number=${encodeURIComponent(phoneNumber)}`,
             { 
                 timeout: 10000,
                 validateStatus: status => status === 200
