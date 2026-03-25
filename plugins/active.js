@@ -14,7 +14,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         // Generate system status message
         const status = `          
-〔 *𝐃𝐀𝐑𝐊-𝐂𝐘𝐁𝐄𝐑-𝐌𝐃* 〕
+〔 *𝐎𝐓𝐏-𝐁𝐎𝐓-𝐌𝐃* 〕
 
 > *👋 ʜɪ*: ${pushname}
 > *⏳ ᴜᴘᴛɪᴍᴇ*:  ${runtime(process.uptime())} 
@@ -22,14 +22,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 > *👨‍💻 ᴏᴡɴᴇʀ*: ʜᴀꜱʜᴜᴜ ᴛᴇᴄʜ </>
 
 
-*ᴅᴀʀᴋ ᴄʏʙᴇʀ ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ʜᴀꜱʜᴜᴜ ᴛᴇᴄʜ 🥹💗*
+*ᴡʜᴀᴛꜱᴀᴘᴘ ᴏᴛᴘ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ʜᴀꜱʜᴜᴜ ᴛᴇᴄʜ 🥹💗*
 
 💗🥹 𝗙𝗢𝗟𝗟𝗢𝗪 𝗢𝗨𝗥 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟
     
 https://whatsapp.com/channel/0029VazhnLzK0IBdwXG4152o
 
   
-> *𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑 𝐌𝐃 𝐖𝐀 𝐁𝐎𝐓 📌️`;
+> *𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐎𝐓𝐏 𝐖𝐀 𝐁𝐎𝐓 📌️`;
 
 
         await conn.sendMessage(from, { 
@@ -41,7 +41,7 @@ https://whatsapp.com/channel/0029VazhnLzK0IBdwXG4152o
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363395674230271@newsletter',
-                    newsletterName: 'DARK-CYBER-MD',
+                    newsletterName: '𝐎𝐓𝐏_𝐁𝐎𝐓',
                     serverMessageId: 190
                 }
             }
