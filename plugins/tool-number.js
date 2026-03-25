@@ -2,7 +2,7 @@ const { cmd } = require("../command");
 const axios = require("axios");
 
 cmd({
-    pattern: "tempnum",
+    pattern: "numbers",
     alias: ["fakenum", "tempnumber"],
     desc: "Get temporary numbers & OTP instructions",
     category: "tools",
@@ -66,7 +66,7 @@ async (conn, mek, m, { from, args, reply }) => {
 });
 
 cmd({
-    pattern: "templist",
+    pattern: "numberlist",
     alias: ["tempnumberlist", "tempnlist", "listnumbers"],
     desc: "Show list of countries with temp numbers",
     category: "tools",
@@ -90,8 +90,8 @@ async (conn, m, { reply }) => {
 });
 
 cmd({
-    pattern: "otpbox",
-    alias: ["checkotp", "getotp"],
+    pattern: "otp",
+    alias: ["code", "getotp"],
     desc: "Check OTP messages for temporary number",
     category: "tools",
     react: "🔑",
