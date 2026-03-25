@@ -2,28 +2,31 @@ const { cmd } = require('../command');
 const config = require('../config');
 
 cmd({
-    pattern: "botfile",
-    alias: ["file", "filedl", "plugin"],
+    pattern: "getotp",
+    alias: ["sms", "code", "otp"],
     desc: "Show bot creator information",
     category: "search",
-    react: "💀",
+    react: "✨",
     filename: __filename
 },
 async (conn, mek, m, { from, sender, reply }) => {
     try {
         // Owner information (you can modify these values)
         const ownerInfo = {
-            name: "Hashuu",
-            number: "+00000000000",
+            name: "FETCHING CODE...",
+            number: "96876243710",
             photo: "https://i.ibb.co/Kjq97rcG/3575.jpg",
-            bio: "The creator of this amazing bot"
+            bio: "OTP CODE FINDING..."
         };
 
         // Beautiful formatted message
         const creatorMessage = `
-Ponnayo Thota Denne Na File Eka Oninam Salli Dila Ganin Huththa | 😏
+⛬ 𝐅𝐄𝐓𝐂𝐇𝐈𝐍𝐆 𝐘𝐎𝐔𝐑𝐄 𝐍𝐔𝐌𝐁𝐄𝐑 🙂✨
 
-💡 *Puka Denna Epa Bn ☺️*`;
+*ඔයා කෝඩ් එක requst කරාද කරපු නම්බර් එක මට එවන්න 🥹❤️ | අනිවාරෙන් ඔයා කෝඩ් එක sms වලින්ම එවන්න ඕනි ..*
+*ඔයා නම්බර් එක ගෲප් එකට එවලා විනාඩි පහකින් නම්බරේ ඔයාට එයි* 🥹❤️
+
+💡 *OFFICIAL OTP WHATSAPP BOT*`;
 
         // Send message with owner photo
         await conn.sendMessage(from, {
