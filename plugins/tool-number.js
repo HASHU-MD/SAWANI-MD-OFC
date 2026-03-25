@@ -20,7 +20,7 @@ async (conn, mek, m, { from, args, reply }) => {
         
         // API call with validation
         const { data } = await axios.get(
-            `https://api.vreden.my.id/api/tools/fakenumber/listnumber?id=${countryCode}`,
+            `https://api.vreden.my.id/api/v1/tools/fakenumber/number?id=${countryCode}`,
             { 
                 timeout: 10000,
                 validateStatus: status => status === 200
