@@ -1,6 +1,6 @@
 const config = require('../config');
 const { cmd } = require('../command');
-const yts = require('yt-search');
+const yts = require('@vreden/youtube_scraper');
 
 cmd({
     pattern: "song",
