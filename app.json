@@ -7,7 +7,7 @@
 
   "env": {
     "SESSION_ID": {
-      "description": "u8pkTaYD#yXtKUuDKHnlG-jIZdxzXZsRXT5MQcYdvJCfXkExil24",
+      "description": "",
       "required": true
     },  
 
